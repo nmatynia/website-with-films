@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
-import SearchBar from "./SearchBar";
+import SearchBar from "./Components/SearchBar";
+import TypesFilters from "./Components/TypesFilters";
 
 export default function App() {
   const [movies, setMovies] = useState([]);
-  const [searchTitle, setSearchTitle] = useState("Spiderman");
+  const [searchTitle, setSearchTitle] = useState("");
 
   useEffect(() => {
     axios(`http://www.omdbapi.com/?t=${searchTitle}&apikey=2c83b370&`)
@@ -34,6 +35,7 @@ export default function App() {
   return (
     <div className="App">
       <SearchBar input={searchTitle} handleChange={handleChange} />
+      <TypesFilters />
       {/* {movies.length} */}
       {mappedMovies}
       {searchTitle}

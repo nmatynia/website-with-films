@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url(../fonts/Helvetica-Bold.ttf);
+}
+
+.typesFilters {
+  /* background: red; */
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  border: 0cm;
+  color: rgb(27, 27, 27);
+  font-size: 30px;
+  font-family: "Helvetica-Bold", sans-serif;
+  padding: 5px 10px;
+  margin: 10px;
+  background-color: white;
+  display: flex;
+}
+
+button:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
+}

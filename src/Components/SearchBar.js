@@ -7,15 +7,14 @@ import { PinDropSharp } from "@mui/icons-material";
 
 export default function SearchBar(props) {
   return (
-    <div>
-      <form>
-        <input
-          type="text"
-          placeholder="Search for movie."
-          value={props.input}
-          onChange={props.handleChange}
-        />
-      </form>
+    <div className="searchBar">
+      Movie you want to find:
+      <input
+        type="text"
+        placeholder="______________________"
+        value={props.input}
+        onChange={props.handleChange}
+      />
     </div>
   );
 }
