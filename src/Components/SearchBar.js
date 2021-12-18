@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react/cjs/react.development";
-import "./SearchBar.css";
+import "../Styles/SearchBar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import { PinDropSharp } from "@mui/icons-material";
 /* <SearchIcon /> */

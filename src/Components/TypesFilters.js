@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./TypesFilters.css";
+import "../Styles/TypesFilters.css";
 
 export default function TypesFilters() {
   return (
